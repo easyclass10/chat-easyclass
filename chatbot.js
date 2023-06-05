@@ -89,7 +89,15 @@ Gracias y que tengas un Buen Día.</pre>`;
       response.text = "Clase presencial o virtual?";
     } else if (words.includes("pago") && words.includes("como") && words.includes("hago")) {
       response.text = "Puedes realizar pago completo o abono de la mitad para agendar o empezar sea el caso";
-    } 
+    } else if (words.includes("precio") && words.includes("parcial")) {
+      response.text = "Valor examen o parcial: $60";
+    } else if (words.includes("soporte")) {
+      response.text = "Si efectivamente, todo lo que se hace se envia su respectivo proceso y desarrollo.";
+    } else if (words.includes("disponible") && words.includes("si")) {
+      response.text = "Hola envia fecha y hora para mirar si hay disponibilidad, probablemente necesites esperarme para cuadrarte.";
+    } else if (words.includes("examen") && words.includes("ayuda") || words.includes("parcial") && words.includes("ayuda") ) {
+      response.text = "Si claro. Enviar fecha, hora y temas para revisar";
+    }
     else {
       response.text = questions[answer];
       if (response.text && answer === '¿Cómo te llamas?') {
