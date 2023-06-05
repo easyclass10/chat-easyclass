@@ -83,7 +83,7 @@ Gracias y que tengas un Buen Día.</pre>`;
       response.text = "Enviar hora, temas y fecha.";
     } else if (words.includes("gracias") || words.includes("gracias!") || words.includes("gracias.")  || words.includes("gracias ")) {
       response.text = "¡Muchas gracias por preferirnos! Esperamos poder servirte nuevamente.";
-    } else if (words.includes("garantia")) {
+    } else if (words.includes("garantia") || words.includes("garantía")) {
       response.text = "Garantía: En caso de perder el examen se hace devolución del 40%";
     } else if (words.includes("clase") && words.includes("para")) {
       response.text = "Clase presencial o virtual?";
